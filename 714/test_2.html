@@ -1,0 +1,138 @@
+<html><!-- 2022.11.6--22:25.pm -->
+<head>
+  <title>Test_2</title>
+  <style type="text/css">
+    h1{font-size: 50px;}
+    img
+    {
+      /*width: 750px;*/
+    }
+    .box
+    {
+      position: fixed;
+      margin-left: 50%;
+      top: 30%;
+      font-size: 30px;
+     
+    }
+    #img1
+     {
+      position: fixed;
+      margin-left: 50%;
+      top: 15%;
+      font-size: 30px;
+      background: lightyellow;
+      text-decoration: none;
+      padding: 6px 15px;
+      color: slategrey;
+      /*外边框圆角*/
+      border-radius: 20px;
+    }
+    #img2
+    {
+      position: fixed;
+      margin-left: 50%;
+      top: 20%;
+      font-size: 30px;
+      background: lightyellow;
+      text-decoration: none;
+      padding: 6px 15px;
+      color: slategrey;
+      /*外边框圆角*/
+      border-radius: 20px;
+    }
+    #p{
+      position: fixed;
+      margin-left: 55%;
+      top: 15%;
+      font-size: 30px;
+      /*background: lightyellow;*/
+      text-decoration: none;
+      padding: 2px 25px;
+      color: snow;
+      /*border-radius: 20px;*/
+}
+    .close_btn
+    {
+      position: absolute;
+      margin-left: 85%;
+      top: 0;
+      color: snow;
+    }
+    body
+    {
+      background-image:linear-gradient(to left, #ff9569 0%, #e92758 175%);;
+      margin-left: 25%;
+    }
+    button,i
+    {
+      /*wait no-drop progress*/
+      cursor:pointer;
+      position: fixed;
+      /*margin-left: 55%;
+      top: 15%;*/
+    }
+    #img1:hover{
+  background: #999;
+  color: #sandybrown;
+}
+ #img2:hover {
+  background: #999;
+  color: #sandybrown;
+}
+
+
+  </style>
+  <script type="text/javascript">
+    window.scrollBy(0,document.body.scrollHeight);
+  </script>
+</head>
+<body>
+  <!-- <h1>test_2</h1> -->
+
+<!-- ……………………………………分割线…………………………………… -->
+  <s id="p"><--</s><button id="img1" title="img1">img1</button><button id="img2" title='img2'>img2</button><br>
+  <img src="../personal/images/005YbSrwly1gn60g9elmhj31hd2bc1lm.jpg" width='750px'title="img1"id='img_show'>
+  <script type="text/javascript">
+    var img1=document.getElementById('img1');
+    var img2=document.getElementById('img2');
+    var img_show=document.getElementById('img_show')
+    var p=document.getElementById('p');
+     img1.onclick=function()
+    {
+      img_show.src="../personal/images/005YbSrwly1gn60g9elmhj31hd2bc1lm.jpg";
+      img_show.title="img1";
+      // img1.style.color='pink';
+      p.style.top='15%';
+
+    }
+    img2.onclick=function()
+    {
+      img_show.src="../personal/images/005YbSrwly1gn60glpicgj31hd2bc4re.jpg";
+      img_show.title="img2";
+      p.style.top='20%';
+    }
+  </script>
+  <!-- ……………………………………分割线…………………………………… -->
+  <div class="box">
+    <i class="close_btn">x</i>
+    <img src="../personal/images/3b07dfedfa774923737b5b982e4e9d18.jpg" width='200px' height='400px'title='别看了，这tm是广告位'>
+  </div>
+<script type="text/javascript">
+  //get
+  var close_btn=document.querySelector('.close_btn');
+  var box=document.querySelector('.box');
+  //relize
+  close_btn.onclick=function () 
+    {
+      box.style.display='none';
+    }
+</script>
+<s id="bottom"></s>
+<!-- <script type="text/javascript">
+ // document.documentElement.scrollIntoView({ block:'end'});
+ let t=document.documentElement.scrollHeight;
+ window.scroll({top:t,left:0,behavior:'smooth'});
+</script> -->
+</body>
+</html>
